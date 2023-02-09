@@ -1,5 +1,13 @@
-class HelloWorld {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!"); 
+pipeline {
+    agent any
+    stages {
+        stage('build') {
+            steps {
+                System.out.println("Hello, World!");
+            }
+        }
     }
 }
+
+
+
